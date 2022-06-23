@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class IntegerDetectorTest {
     @Test
-    void testIntegerDetector(){
+    public void testIntegerDetector(){
         IntegerDetector integerDetector = new IntegerDetector();
 
         assertEquals(true, integerDetector.detect("1"));

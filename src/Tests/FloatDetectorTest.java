@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class FloatDetectorTest {
     @Test
-    void testFloatDetector(){
+    public void testFloatDetector(){
         FloatDetector floatDetector = new FloatDetector();
 
         assertEquals(true, floatDetector.detect("1.0"));
