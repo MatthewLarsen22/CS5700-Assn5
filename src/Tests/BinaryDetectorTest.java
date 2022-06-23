@@ -6,6 +6,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BinaryDetectorTest {
+    public BinaryDetectorTest(){
+        testBinaryDetector();
+    }
+
     @Test
     public void testBinaryDetector(){
         BinaryDetector binaryDetector = new BinaryDetector();

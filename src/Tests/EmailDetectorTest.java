@@ -6,6 +6,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class EmailDetectorTest {
+    public EmailDetectorTest(){
+        testEmailDetector();
+    }
+
     @Test
     public void testEmailDetector(){
         EmailDetector emailDetector = new EmailDetector();
