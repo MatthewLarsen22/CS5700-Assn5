@@ -9,6 +9,6 @@ public class FloatDetector extends Detector{
 
     @Override
     public void restartState() {
-        state = new FloatStartState(this);
+        setState(new FloatStartState(this));
     }
 }

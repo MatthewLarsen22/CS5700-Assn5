@@ -9,6 +9,6 @@ public class IntegerDetector extends Detector{
 
     @Override
     public void restartState() {
-        state = new IntegerStartState(this);
+        setState(new IntegerStartState(this));
     }
 }
