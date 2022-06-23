@@ -6,8 +6,12 @@ import java.util.Objects;
 
 public abstract class Detector {
     protected State state;
+    protected int minLength = 0;
 
     public Boolean detect(String input){
+        if(input.length() < minLength){
+            return false;
+        }
         String[] characters = input.trim().split("");
 
         for (String character : characters){
