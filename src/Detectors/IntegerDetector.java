@@ -1,9 +1,8 @@
 package Detectors;
 
-import States.IntegerStates.*;
+import States.IntegerStates.IntegerStartState;
 
 public class IntegerDetector extends Detector{
-
     public IntegerDetector(){
         restartState();
     }

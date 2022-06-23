@@ -1,10 +1,10 @@
-package States.IntegerStates;
+package States.FloatStates;
 
 import Detectors.Detector;
 import States.State;
 
-public class IntegerInvalidState extends State {
-    public IntegerInvalidState(Detector detector){
+public class FloatInvalidState extends State {
+    public FloatInvalidState(Detector detector){
         isAccepting = false;
         this.detector = detector;
     }

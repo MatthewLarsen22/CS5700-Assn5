@@ -1,10 +1,10 @@
-package States.IntegerStates;
+package States.FloatStates;
 
 import Detectors.Detector;
 import States.State;
 
-public class IntegerValidNumState extends State {
-    public IntegerValidNumState(Detector detector){
+public class FloatValidFloatState extends State {
+    public FloatValidFloatState(Detector detector) {
         isAccepting = true;
         this.detector = detector;
     }
@@ -12,7 +12,7 @@ public class IntegerValidNumState extends State {
     @Override
     public void consumeInput(String character) {
         if (!"0123456789".contains(character)){
-            detector.setState(new IntegerInvalidState(detector));
+            detector.setState(new FloatInvalidState(detector));
         }
     }
 }
